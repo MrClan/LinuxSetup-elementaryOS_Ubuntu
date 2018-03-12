@@ -1,0 +1,94 @@
+To install rpm packages:
+    1. sudo alien rpmpackage.rpm // generates .deb package
+    2. sudo dpkg -i rpmpackage.deb // to install the generated .deb
+    3. Or in a single command: 
+        sudo alien -i rpmpackage.rpm
+
+install gdebi to install .deb files using GUI
+
+install git:
+    sudo apt install git
+install nvm:
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+install node:
+    nvm install 9.8.0
+install zsh:
+    sudo apt install zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+https://unix.stackexchange.com/a/3445/74788
+
+https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+https://github.com/zsh-users/zsh-autosuggestions
+
+install powerlevel9k theme for zsh
+    also add at the top of .zshrc file this line: 
+        export TERM="xterm-256color"
+
+d
+
+
+add apt-get install command:
+    sudo apt-get install software-properties-common
+install thefuck
+sudo apt update
+sudo apt install python3-dev python3-pip
+sudo pip3 install thefuck
+
+install dtrx
+    https://brettcsmith.org/2007/dtrx/
+
+install htop and system monitor
+sudo apt install htop
+USE AppCenter or google for apt command: sudo apt install system-monitor
+
+install silversearcher for text search inside files
+    apt-get install silversearcher-ag
+
+set this commands cheatsheet as wallpaper:
+    https://qph.ec.quoracdn.net/main-qimg-9cdd2bc53bb1334ddc36f9f1902d3fe1
+
+install git-extras
+    sudo apt-get install git-extras
+
+
+install important node packages
+    npm i -g vue-cli @feathersjs/cli http-server surge
+
+install dconf-editor to update system settings
+use app center
+
+
+install peazip from https://osdn.net/projects/peazip/downloads/69057/peazip_6.5.1.LINUX.GTK2-2_all.deb/
+
+
+install dotnet
+install vundle and vim plugins: fugitive and nerdTree
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'mattn/emmet-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'flazz/vim-colorschemes'
+
+
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export TERM="xterm-256color"
+# Path to your oh-my-zsh installation. 
+export ZSH=/home/mrclan/.oh-my-zsh
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+
+DEFAULT_USER=mrclan
+# Set list of themes to load
+
+
+
+to check for public IP:
+curl -4 icanhazip.com
