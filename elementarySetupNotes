@@ -89,6 +89,24 @@ DEFAULT_USER=mrclan
 # Set list of themes to load
 
 
+Install catfish for file search (set shortcut, Win+Shift+F)
+    https://pkgs.org/download/catfish
+    
+Set terminator as default terminal using dconf editor
+
+install devilspie using apt-get
+Enable *show-desktop* and *multitasking view* from settings-hot corners, and using a devilspie script below:
+devilspie /home/mrclan/minimize.ds
+________________
+(begin
+	(minimize)
+	(quit))
+    
+________________    
+And bind shortcut Win+D for the same command
+
+curl tutorial link: https://curl.haxx.se/docs/httpscripting.html
+
 
 to check for public IP:
 curl -4 icanhazip.com
